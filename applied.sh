@@ -45,4 +45,5 @@ echo "Show the ~/Library folder"
 chflags nohidden ~/Library
 
 echo "Make Dock show up faster"
+defaults write com.apple.dock autohide-time-modifier -float 0.5
 defaults write com.apple.Dock autohide-delay -float 0
