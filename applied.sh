@@ -40,10 +40,15 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 echo "Only use UTF-8 in Terminal.app"
 defaults write com.apple.terminal StringEncodings -array 4
- 
+
 echo "Show the ~/Library folder"
 chflags nohidden ~/Library
 
 echo "Make Dock show up faster"
 defaults write com.apple.dock autohide-time-modifier -float 0.5
 defaults write com.apple.Dock autohide-delay -float 0
+
+# Use list view in all Finder windows by default
+# Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`, "Nlsv"
+echo "Make column view default"
+defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
