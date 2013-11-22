@@ -52,3 +52,7 @@ defaults write com.apple.Dock autohide-delay -float 0
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`, "Nlsv"
 echo "Make column view default"
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
+
+# Show indicator lights for open applications in the Dock
+echo "Show indicator lights for open applications in the Dock"
+defaults write com.apple.dock show-process-indicators -bool true
