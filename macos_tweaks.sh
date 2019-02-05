@@ -12,7 +12,7 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 #defaults write com.apple.finder ShowPathbar -bool true
 
 #echo "Show Status bar in Finder"
-#defaults write com.apple.finder ShowStatusBar -bool true
+defaults write com.apple.finder ShowStatusBar -bool true
 
 echo "Expand save panel by default"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
